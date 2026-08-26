@@ -7,8 +7,8 @@ across my own machines in 2026, stripped of everything that only made sense on
 **Authored by [Ross](https://github.com/RossGeordie).** Distilled from the two
 boxes that carry my daily life:
 
-- an **HP Elite X360** — laptop, daily driver and Steam machine
-- a **Minisforum MS-01** — i9 mini-workstation running headless-ish with a
+- an **HP Laptop** — laptop, daily driver and Steam machine
+- a **Workstation** — Workstation running headless-ish with a
   remote-desktop overlay
 
 Both live on **NixOS 26.05**, **KDE Plasma 6 (X11)**, **Home Manager**, and a
