@@ -1,5 +1,5 @@
 {
-  description = "Ross's NixOS Flake";
+  description = "A generic NixOS 26.05 starter — Plasma 6, Home Manager, sensible defaults";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
@@ -11,16 +11,17 @@
   };
 
   outputs = { self, nixpkgs, home-manager, ... } @ all: {
-    nixosConfigurations.rx360 = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.example = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
 
-      # Expose ALL flake inputs (incl. `inputs`) to modules via specialArgs
+      # Expose ALL flake inputs (incl. `inputs`) to modules via specialArgs,
+      # so a module can do `specialArgs.inputs.nixpkgs.url` etc.
       specialArgs = all;
 
       modules = [
-        ./hosts/x360/configuration.nix
+        ./hosts/example/configuration.nix
 
-        # Home Manager, activated by the NixOS system build
+        # Home Manager, activated by the NixOS system build.
         home-manager.nixosModules.home-manager {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
