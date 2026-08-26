@@ -63,7 +63,6 @@ supposed to hand-type.
 These are the pieces I keep in my own private per-machine configs and would add
 to this repo if they were machine-agnostic enough:
 
-- **Steam + Gamescope + GameMode** with ProtonUP and `mangohud`
 - **RustDesk** with a session-autostart (X11-only reason, see above)
 - **NFS automount block** for network shares (vers=3, automount, nofail)
 - **SDDM autologin** for unattended boxes — with the gotcha that it's the
